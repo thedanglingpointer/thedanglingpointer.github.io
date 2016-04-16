@@ -1,0 +1,43 @@
+.home{
+color: #333333;
+font-family: Century Gothic, sans-serif;
+}
+.home h1{
+       padding-left: 19%;
+    padding-top: 13%;
+}
+
+.home img{
+    padding-left: 40%
+}
+
+.notFound{
+color: #333333;
+font-family: Century Gothic, sans-serif;
+}
+.notFound h1{
+    padding-left: 50%;
+    padding-top: 13%;
+}
+
+.notFound h2{
+    padding-left: 36%;
+   }
+.button{   
+     background: rgba(0, 128, 0, 0.67);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-weight: 800;
+	}
+.backButton a:hover{   
+     background: rgba(0, 128, 0, 0.52);
+	
+	}
+	
+.backButton{
+	padding-left: 48%;
+    padding-top: 32px;
+	font-weight:100px;
+}
