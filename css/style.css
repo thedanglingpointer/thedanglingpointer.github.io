@@ -16,13 +16,17 @@ color: #333333;
 font-family: Century Gothic, sans-serif;
 }
 .notFound h1{
-    padding-left: 50%;
+    padding-left: 70%;
     padding-top: 13%;
 }
 
 .notFound h2{
     padding-left: 36%;
    }
+.notFound img{
+    float:left;
+   }   
+   
 .button{   
      background: rgba(0, 128, 0, 0.67);
     color: white;
@@ -37,7 +41,7 @@ font-family: Century Gothic, sans-serif;
 	}
 	
 .backButton{
-	padding-left: 48%;
+	padding-left: 67%;
     padding-top: 32px;
 	font-weight:100px;
 }
