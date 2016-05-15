@@ -1,47 +1,110 @@
-.home{
-color: #333333;
-font-family: Century Gothic, sans-serif;
-}
-.home h1{
-       padding-left: 19%;
-    padding-top: 13%;
-}
-
-.home img{
-    padding-left: 40%
-}
-
-.notFound{
-color: #333333;
-font-family: Century Gothic, sans-serif;
-}
-.notFound h1{
-    padding-left: 70%;
-    padding-top: 13%;
-}
-
-.notFound h2{
-    padding-left: 36%;
-   }
-.notFound img{
-    float:left;
-   }   
-   
-.button{   
-     background: rgba(0, 128, 0, 0.67);
-    color: white;
-    padding: 14px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-	font-weight: 800;
-	}
-.backButton a:hover{   
-     background: rgba(0, 128, 0, 0.52);
+.navbar-inverse {
+  background-color: black;
+    border-color: #FFFF;
+	font-family:Kaushan Script;
+	color:white;
 	
-	}
-	
-.backButton{
-	padding-left: 67%;
-    padding-top: 32px;
-	font-weight:100px;
 }
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-size:22px;
+  padding-bottom:20px;
+  
+}
+ .main{
+ margin-top: 3%;
+ }
+ 
+ .posts{
+ margin-top: 3%;
+ }
+ 
+ .searchbar  {
+    float: right;
+ }
+.search-icon{
+    margin-left: 6px;
+    font-size: 19px;
+}
+.searchbar input{
+width: 250px;
+    height: 28px;
+    margin-top: 10px;
+	font-family:gabriele;
+	font-size:15px;
+	color:black;
+	 border-radius: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-size:18px;
+      margin-right: 15px;
+	  // border-radius: 15px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #A09797;
+}
+.mobile-menu{
+display:none;
+}
+@media (max-width: 928px) {
+    .searchbar{
+	//align:center;
+	}
+	.navbar-header{
+	padding-left: 36%;
+	}
+	.mobile-menu{
+	display:block;
+	float:left;
+	font-size: 28px;
+    padding-top: 10px;
+	}
+	.navbar-nav {
+   display:none;
+}
+.main{
+ margin-top: 8%;
+ }
+ 
+ .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: none;
+}
+}
+@media (min-width: 768px)
+.navbar-nav {
+    float: none;
+    margin: 0;
+}
+@media (min-width: 768px)
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: none;
+    margin-left: none;
+}
+
+@media (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: none;
+}
+
+@media (max-width: 768px) and (min-width: 453px){
+    .searchbar{
+	float:none;
+	margin-left:30%;
+	margin-bottom: 12px;
+	}
+	.main{
+	padding-top:9%;
+	}
+	.main container-fluid{
+	padding-left:0px !important;
+	padding-right:0px !important;
+	}
+ }
