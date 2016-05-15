@@ -1,119 +1,110 @@
-
-.menu{
-//display:inline;
-    width: 100%;
-    height: 15%;
+.navbar-inverse {
+  background-color: black;
+    border-color: #FFFF;
+	font-family:Kaushan Script;
+	color:white;
 	
 }
-.menu ul{
-display:inline;
-}
-.menu li{
-    background: rgba(177, 11, 11, 0.71);
-   text-align: center;
-    text-transform: uppercase;
-    color: white;
-    float: left;
-    width: 24%;
-   height: 38px;
-    padding-top: 15px;
-	border:1px solid;
-	font-weight:bold;
-	font-size: 20px;
-	list-style:none;
-	//display:inline;
-}
 
-.menu li a{
-text-decoration:none;
-color:white;
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-size:22px;
+  padding-bottom:20px;
+  
 }
-.menu li:hover{
-background: rgba(177, 11, 11, 0.97);
-box-shadow: 0 4px 8px 0 rgba(177, 11, 11, 0.71), 0 6px 20px 0 rgba(177, 11, 11, 0.50);
+ .main{
+ margin-top: 3%;
+ }
+ 
+ .posts{
+ margin-top: 3%;
+ }
+ 
+ .searchbar  {
+    float: right;
+ }
+.search-icon{
+    margin-left: 6px;
+    font-size: 19px;
 }
-.picture{
-height:190px;
+.searchbar input{
+width: 250px;
+    height: 28px;
+    margin-top: 10px;
+	font-family:gabriele;
+	font-size:15px;
+	color:black;
+	 border-radius: 10px;
 }
-.picture img {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 1260px !important;
-    height: 172px !important;
-    //padding-left: 44px;
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-size:18px;
+      margin-right: 15px;
+	  // border-radius: 15px;
 }
-.post{
-	width: 72%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-	float:left;
-	padding-top:5px;
-	margin-top: 27px;
-	
-    }
-	.sidebar{
-    width: 20%;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float:right;
-	margin-top: -393px;
-    margin-right: 50px;
-    }
-
-.home{
-color: #333333;
-font-family: Century Gothic, sans-serif;
-padding-left:50px;
-//padding-right:20px;
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #A09797;
 }
-.index h1{
-    padding-left: 19%;
-    padding-top: 13%;
-}
-
-.index img{
-   padding-left: 40%
-}
-
-.notFound{
-color: #333333;
-font-family: Century Gothic, sans-serif;
-}
-.notFound h1{
-    padding-left: 70%;
-    padding-top: 13%;
-}
-
-.notFound h2{
-    padding-left: 36%;
-   }
-.notFound img{
-    float:left;
-   }   
-   
-.button{   
-     background: rgba(0, 128, 0, 0.67);
-    color: white;
-    padding: 14px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-	font-weight: 800;
-	}
-.backButton a:hover{   
-     background: rgba(0, 128, 0, 0.52);
-	
-	}
-	
-.backButton{
-	padding-left: 67%;
-    padding-top: 32px;
-	font-weight:100px;
-}
-
-.searchResults{
+.mobile-menu{
 display:none;
-width: 72%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-	float:left;
-	padding-top:5px;
-	margin-top: 27px;
 }
+@media (max-width: 928px) {
+    .searchbar{
+	//align:center;
+	}
+	.navbar-header{
+	padding-left: 36%;
+	}
+	.mobile-menu{
+	display:block;
+	float:left;
+	font-size: 28px;
+    padding-top: 10px;
+	}
+	.navbar-nav {
+   display:none;
+}
+.main{
+ margin-top: 8%;
+ }
+ 
+ .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: none;
+}
+}
+@media (min-width: 768px)
+.navbar-nav {
+    float: none;
+    margin: 0;
+}
+@media (min-width: 768px)
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: none;
+    margin-left: none;
+}
+
+@media (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: none;
+}
+
+@media (max-width: 768px) and (min-width: 453px){
+    .searchbar{
+	float:none;
+	margin-left:30%;
+	margin-bottom: 12px;
+	}
+	.main{
+	padding-top:9%;
+	}
+	.main container-fluid{
+	padding-left:0px !important;
+	padding-right:0px !important;
+	}
+ }

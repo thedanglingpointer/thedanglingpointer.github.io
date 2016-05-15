@@ -10,18 +10,18 @@ $('.post').each(function(){
 var postTitle=$(this).find('h1').html();
 var postContent=$(this).find('h2').html();
 if(postTitle.length>0 && (postTitle.toLowerCase().indexOf(searchText)>=0 || postContent.toLowerCase().indexOf(searchText)>=0) && searchText.length>0){
-if(postTitle.toLowerCase().indexOf(searchText)>=0 && postContent.toLowerCase().indexOf(searchText)>=0){
-matches=matches+2;
-}
-else
-matches++;
+//if(postTitle.toLowerCase().indexOf(searchText)>=0 && postContent.toLowerCase().indexOf(searchText)>=0){
+//matches=matches+2;
+//}
+//else
+//matches++;
 $('.searchResults').show();
-$('.result').append(formSearchResult(searchText,postTitle)+formSearchResult(searchText,postContent));
+$('.result').append(formSearchResult(searchText,postTitle,matches)+formSearchResult(searchText,postContent,matches));
 }
 });
 $('.searchResults span').html("<h2>"+matches+" match(es) found for "+searchText+"</h2>");
 });
-function formSearchResult(searchText,content){
+function formSearchResult(searchText,content,matches){
 var newContent="";
 if(content.toLowerCase().indexOf(searchText)>=0){
 while(content.toLowerCase().indexOf(searchText)>=0){
@@ -30,6 +30,8 @@ var beforeMatchedContent=content.substring(0,matchedIndex);
 var afterMatchedContent=content.substring(matchedIndex+searchText.length);
 newContent= newContent+beforeMatchedContent+'<b>'+content.substring(matchedIndex,matchedIndex+searchText.length)+'</b>';
 content=afterMatchedContent;
+matches++;
+console.log(matches);
 }
 return newContent+afterMatchedContent;
 }
