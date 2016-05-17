@@ -98,10 +98,26 @@ display:none;
     .searchbar{
 	float:none;
 	margin-left:30%;
-	margin-bottom: 12px;
+	margin-bottom: 2%;
+	//postion:fixed;
 	}
 	.main{
 	padding-top:9%;
+	}
+	.main container-fluid{
+	padding-left:0px !important;
+	padding-right:0px !important;
+	}
+ }
+ 
+ @media (max-width: 452px){
+    .searchbar{
+	float:none;
+	margin-left:19%;
+	margin-bottom: 4%;
+	}
+	.main{
+	padding-top:15%;
 	}
 	.main container-fluid{
 	padding-left:0px !important;
